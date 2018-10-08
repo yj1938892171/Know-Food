@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+		<script src="js/jquery-3.3.1.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/last.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<!--网页头部的导航条区域-->
+		<header>
+			<div class="header-top">
+					<span class="iconfont icon-youxiang"><span>123456789@163.com</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="iconfont icon-dianhua"><span>100-1000-1000</span></span>
+			</div>
+			<div class="header-bottom">
+				<div class="header-bottom-img">
+					<div id="header-bottom" class="container">
+							<nav class="navbar navbar-expand-lg	 bg-dark navbar-dark fixed-top">
+								<a class="" href="#">
+									<img src="img/logo.png" alt="" class="navbar-brand" id="logo">
+								</a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-bottom-nav">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<div class="collapse navbar-collapse justify-content-end"  id="header-bottom-nav">
+									<ul class="navbar-nav">
+										<li class="nav-item">
+											<a href="index.html">Home</a>
+										</li>
+										<li class="nav-item">
+											<a href="#">About food</a>
+										</li>
+										<li class="nav-item active">
+											<a href="menu.html">Menu</a>
+										</li>
+										<li class="nav-item">
+											<a href="#">Connoisseur</a>
+										</li>
+										<li class="nav-item">
+											<a href="#">Reservation</a>
+										</li>
+										<li class="nav-item">
+												<a href="#" class="iconfont icon-sousuo"></a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+					</div>
+					<!--轮播-->
+					  <div id="app">
+						  <template v-for="(pic, index) in pics">
+							  <img v-bind:src=pic.url class="img" v-show="pic.isCurrent == true">
+							</template>
+							<div id="zhezhao"></div>
+					  </div>
+			        </div>
+			        <!--轮播上的文字-->
+					<div class="header-bottom-zhezhao">
+					<div id="banner-text">
+						   <h2 class="text-center">Chinese food</h2>
+						   <p>Shandong cuisine</p>
+                           <p>Sichuan cuisine</p>     
+                           <p>Cantonese cuisinep</p>
+                           <p id="more">more >></p>
+	                       <button class="btn btn-light btn-lg"><span></span>Order</button>
+					    </div>
+				      </div>
+				</div>
+		  </header>
+		  <br>
+		  <!--菜单-->
+		  <section id="content">
+			<div class="container">
+				<div class="row food">
+					<div class="col-md-12">
+						<h2>ShanDong cuisine</h2>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/shandong1.png" alt="">
+							<h4>cocktail shrimp</h4>
+							<button class="btn">￥49</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/shandong2.png" alt="">
+							<h4>Cucumber in Sauce</h4>
+							<button class="btn">￥25</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/shandong3.png" alt="">
+							<h4>Braised pork</h4>
+							<button class="btn">￥38</button>
+						</div>
+						<button class="btn btn-light btn-lg" id="menu-more">more >></button>
+					</div>
+				</div>
+			
+				<div class="row food">
+					<div class="col-md-12">
+						<h2>Sichuan cuisine</h2>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/sichuan1.png" alt="">
+							<h4>Mapo Tofu</h4>
+							<button class="btn">￥49</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/sichuan2.png" alt="">
+							<h4>Spicy hot pot</h4>
+							<button class="btn">￥25</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+						<img src="img/sichuan3.png" alt="">
+							<h4>Fried ribs</h4>
+							<button class="btn">￥38</button>
+						</div>
+					<button class="btn btn-light btn-lg" id="menu-more">more >></button>
+					</div>
+				</div>
+			</div>
+		  </section>
+           <!--菜食介绍-->
+           <section id="caijieshao">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="box">
+						<div class=" content-text">
+						<div class="box-area">
+						<h4 class="text-center">Cantonese cuisine</h4>
+						<div class="aboutchn-text">
+							<p class="aboutchn-text-content">Cantonese cuisine is a representative dish in China abroad. Cantonesecuisine is more complicated and finerCantonese cuisine is a culture,an atmosphere, a rendering, a harmony, a folk custom, a color, and a manifestation of health standards.</p>
+						</div>
+						</div>
+						</div>
+						</div>
+					</div>
+					<div class="jiantou"><img src="img/jiantou.jpg"/></div>
+					<div class="col-md-3">
+						<div class="box">
+						<div class=" content-text">
+						<div class="box-area">
+						<h4 class="text-center">Shandong cuisine</h4>
+						<div class="aboutchn-text">
+							<p class="aboutchn-text-content">Shandong cuisine, originated fromShandong Qilu flavor, is the only spontaneous cuisine of the four traditional Chinese cuisines (compared with the Huaiyang, Sichuan, Guangdong andother influential cuisines) is the oldestmost technical, the most difficult, the most meritorious</p>
+						</div>
+						</div>
+						</div>
+						</div>
+					</div>
+					<div class="jiantou"><img src="img/jiantou.jpg"/></div>
+					<div class="col-md-3">
+						<div class="box">
+						<div class=" content-text">
+						<div class="box-area">
+						<h4 class="text-center">Sichuan cuisine</h4>
+						<div class="aboutchn-text">
+							<p class="aboutchn-text-content">Sichuan cuisine, namely Sichuancuisine, is one of the four traditionalChnese cuisines, one of the eight majorChinese cuisines, and a master of Chinese cuisine.</p>
+						</div>
+						</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </section>
+
+		  <!--尾部-->
+		  <footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 footer-bottom">
+						<h5>Contact us</h5>
+						<p>Tel：100-1000-1000</p>
+						<p>QQ：123456789</p>
+						<p>Email：123456789@163.com</p>
+					</div>
+					<div class="col-md-6">
+						<h5>Company address</h5>
+						<p>China：Optics Valley square, Wuhan, Hubei</p>
+						<p>USA：Redmond, Washington, USA</p>
+					</div>
+				</div>
+				<p class="footer-text">Copyright ©2018 Know food has sales in all countries. China, Europe, America, East Asia and Africa all have sales. </p>
+			</div>
+		</footer>
+
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		var myData = {
+			pics: [
+				{
+					isCurrent: true,
+					url: "img/banner1.jpg"
+				},
+				{
+					isCurrent: false,
+					url: "img/banner4.jpg"
+				},
+				{
+					isCurrent: false,
+					url: "img/banner6.jpg"
+				}
+			],
+			currentIndex: 0
+		}
+
+		function changeNO() {
+			for (i=0; i<myData.pics.length; i++)
+				myData.pics[i].isCurrent = false;
+			myData.currentIndex++;
+			if (myData.currentIndex > myData.pics.length-1)
+				myData.currentIndex = 0;
+			myData.pics[myData.currentIndex].isCurrent = true;
+		}
+
+		var app = new Vue({
+			el: "#app",
+			data: myData,
+			created: function() {
+				setInterval(changeNO, 3000)
+			}
+		})
+	</script>
+</html>

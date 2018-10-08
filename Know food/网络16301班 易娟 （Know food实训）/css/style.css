@@ -1,0 +1,721 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: #333;
+}
+.iconfont {
+	color: #db9633;
+}
+.header-top {
+	padding:0 0 0 200px;
+}
+.header-bottom-img {
+	position: absolute;
+}
+.header-bottom-img img{
+	position: relative;
+    z-index: 1;
+    max-width: 100%;
+    float: left;
+    /* 转换为块级元素 */
+    display: block;
+}
+.header-bottom-img #zhezhao{
+	position: absolute;
+	z-index: 2;
+	width: 40%;
+	height: 100%;
+	/* 兼容谷歌浏览器 */
+	-webkit-logical-height: 100%;
+	background: #333;
+	opacity: 0.7;
+}
+nav{
+	padding-left:0;
+	width:100%; 
+	height:80px;
+	line-height: 80px;
+	position: absolute;
+	z-index: 999;
+	margin-top: 25px;
+}
+.nav-item {
+	padding-left:20px ;
+	font-size:24px;
+	margin-right:  60px;
+}
+nav img {
+	margin-left:40%;
+	margin-top: -8%;
+	line-height: 15%;
+}
+.nav-item a{
+	color:#fff;
+}
+ .nav-item a:hover{
+	color: #db9633;
+	/* 文字修饰属性 */
+	cursor: pointer;
+	text-decoration: none;
+}
+.active a{
+	color: #db9633;
+	/* 鼠标以手状显示 */
+	cursor: pointer;
+}
+nav .icon-sousuo {
+	color:#fff;
+	font-size:20px;
+}
+.bg {
+	background: #000;
+	opacity: 0.7;
+	position: fixed;
+	margin-top: 0;
+}
+.header-bottom-zhezhao{
+	position: absolute;
+	width:40%;
+	height:100%;
+}
+#banner-text {
+	/* 层次 */
+	z-index: 3;
+	float: left;
+	position: relative;
+	width: 50%;
+	margin-top: 18%;
+	margin-left: 20%;
+	word-break: break-all;
+	cursor: pointer;
+}
+#banner-text h2 {
+	font-size: 40px;
+	color: #fff;
+	margin-bottom:30px;
+}
+#banner-text p {
+	color: #fff;
+	line-height:40px;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+#banner-text .btn {
+	color: #333;
+	margin: 0px auto;
+	position: relative;
+	margin-left: 26%;
+}
+#banner-text .btn:hover {
+	background: #db9633;
+	color: #fff;
+}
+#banner-text .btn span {
+	margin-right: 5px;
+	padding: 0 11px;
+	/* 圆角 */
+	border-radius: 100%;
+	background-color: #e48907;
+}
+#content {
+	display: flex;
+	width: 100%;
+	margin-top: 45%;
+}
+#content .content-img img{
+	width: 100%;
+	position: relative;
+}
+#content .content-text {
+	word-break: break-all;
+}
+#content .content-text h2 {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+#content .aboutchn-text {
+	background: #efefef;
+	border-radius: 10px;
+	width: 100%;
+	height: 300px;
+	padding-top: 10px;
+}
+#content .aboutchn-text:hover{
+	background-color: #C6C8CA;
+}
+#content .content-text .aboutchn-text-title {
+	margin: 0 auto;
+	width: 80%;
+	color: #db9633;
+}
+#content .content-text .aboutchn-text-content {
+	margin: 0 auto;
+	width: 80%;
+	text-indent: 40px;
+	line-height: 28px;
+}
+#content .cook {
+	margin-top: 30px;
+	width: 100%;
+	height: 450px;
+	background: #efefef;
+}
+#content .cook-text {
+	width: 90%;
+	background: #fff;
+	border-radius: 10px;
+	height: 350px;
+	margin: 50px 0 0 30px;
+	word-break: break-all;
+}
+#content .cook-text:hover{
+	background-color: #C6C8CA;
+}
+#content .cook-text .ourcook {
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 20px;
+	color: #db9633;
+}
+#content .cook-text .cook-text-text {
+	width: 80%;
+	margin: 0 auto;
+	text-indent: 40px;
+	line-height: 28px;
+}
+#content .cook-img img {
+	margin-top: 25px;
+	width: 100%;
+}
+#menu {
+	top: 40px;
+	position: relative;
+}
+#menu .menu-title {
+	font-size: 36px;
+	margin-left: 45%;
+	/* position: absolute; */
+}
+#menu .view{
+	margin-left: 300px;
+	width:200px;
+	background-color: #efefef;
+	/* position: absolute; */
+}
+#menu .view span{
+	margin-right: 5px;
+	padding: 0 9px;
+	border-radius: 100%;
+	background-color: #e48907;
+}
+#menu .menu {
+	padding: 0;
+	margin-top: 5%;
+	width:90%;
+}
+#menu .menu-fruits {
+	width:80%;
+	margin-left:30%;
+	background: #efefef;
+	height:310px;
+	/* 阴影 */
+	box-shadow:5px 5px #ccc;
+}
+#menu .menu-fruits img{
+	position: relative;
+	margin-top: 40px;
+	margin-left: 50px;
+	width: 60%;
+}
+#menu .menu-fruits h4{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 18px;
+}
+#menu .menu-fruits .btn{
+	background-color: #f88305;
+	padding: 0px;
+	width:150px;
+	margin-left:46px;
+	color:#fff;
+	font-weight: bold;
+}
+#reservation {
+	margin-top: 60px;
+}
+#reservation h2{
+	margin-left:35px;
+}
+#reservation p input{
+	margin-left:30px;
+	border:0px;
+	margin-top:20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+}
+#reservation .yourmessage{
+	width:70%;
+} 
+#reservation .btn-reservation{
+	width:150px;
+	font-size:14px;
+	margin-left:25%;
+	margin-top:10px;
+	background-color: #efefef;
+}
+#reservation .btn-reservation span {
+	margin-right: 5px;
+	padding: 0 8px;
+	border-radius: 100%;
+	background-color: #e48907;
+}
+footer {
+	padding-top: 20px;
+	padding-left: 25%;
+	padding-right: 20%;
+	width: 100%;
+	height: 180px;
+	background: #333333;
+	margin-top: 30px;
+	cursor: pointer;
+}
+footer h5, footer p {
+	color: #fff;
+	width:700px;
+}
+footer h5 {
+	margin-bottom: 8px;
+}
+footer p {
+	font-size: 12px;
+	margin: 0;
+	line-height: 20px;
+}
+footer .footer-text {
+	margin-top: 10px;
+}
+footer .footer-bottom {
+	padding-left: 10%;
+}
+footer .footer-bottom-bottom{
+	margin-left:0px;
+}
+/* 在不同的尺寸下面进行不同的设置 */
+/* 媒体查询 在1580px~1680px时 */
+@media screen and (min-width:1580px) and (max-width:1680px) {
+     .nav-item {
+	    padding-left:20px ;
+	}
+}
+/* 媒体查询 在1450px~1579px时 */
+@media screen and (min-width:1450px) and (max-width:1579px) {
+	.nav-item{
+		padding-left: 15px;
+	}
+	nav img{
+		margin-left:30%;
+	}
+	#banner-text {
+		margin-top: 15%;
+	}
+	#banner-text h2, #banner-text p {
+		margin-bottom: 20px;
+	}
+	#banner-text p {
+		font-size: 22px;
+	}
+}
+/* 媒体查询 在1200px~1449px时 */
+@media screen and (min-width:1200px) and (max-width:1449px){
+	.nav-item {
+	    padding-left:13px ;
+	    font-size:20px;
+    }
+    nav img {
+	    margin-left:20%;
+    }
+	#banner-text h2{
+		font-size:30px;
+	}
+	#banner-text h2{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#banner-text p {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+	#banner-text .btn{
+		position: absolute;
+		margin-left: 20%;
+		width: 55%;
+		height: 10%;
+		line-height: 10%;
+	}
+	#banner-text .btn{
+		font-size: 16px;
+	}
+	#banner-text .btn span{
+		margin-left: 0;
+		padding: 0 8px;
+	}
+}
+/* 媒体查询 在992px~1199px时 */
+@media screen and (min-width:992px) and (max-width:1199px) {
+	.nav-item {
+	    font-size:16px;
+	    padding-left: 4px;
+    }
+    nav img {
+	    margin-left:10%;
+    }
+	#banner-text h2{
+		font-size: 28px;
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	#banner-text p{
+		font-size: 18px;
+		margin-bottom: 10px;
+		width: 120%;
+		line-height: 30px;
+	}
+	.nav img {
+		margin-top: -15%;
+		margin-right: 0;
+	}
+	.nav li#logo {
+		padding: 0;
+	}
+	.nav li {
+		padding-left: 30px;
+		font-size: 20px;
+	}
+	#banner-text .btn{
+		position: absolute;
+		margin-left: 20%;
+		width: 55%;
+		height: 10%;
+		line-height: 10%;
+		padding-left: 8px;
+	}
+	#banner-text .btn {
+		font-size: 14px;
+	}
+	#banner-text .btn span {
+		padding: 0 8px;
+	}
+	.nav {
+		height: 15%;
+	}
+	#menu .view{
+		margin-left: 200px;
+	}
+	#menu .menu-fruits .btn {
+		margin-top: 10px;
+		margin-left: 30px;
+	}
+}
+/* 媒体查询 在768px~991px时 */
+@media screen and (min-width:768px) and (max-width:991px) {
+	.nav-item {
+	    font-size:14px;
+	    padding-left: 3px;
+    }
+    nav img {
+	    margin-left:5%;
+    }
+	.menu-fruits {
+		float: left;
+	}
+	#banner-text {
+	   width: 70%;
+	   margin-top: 22%;
+	   margin-left: 14%;
+    }
+	#banner-text h2 {
+	   font-size: 22px;
+	   margin-bottom:10px;
+    }
+    #banner-text p {
+	   font-size: 14px;
+	   margin-bottom: 20px;
+	   line-height: 20px;
+    }
+    #banner-text .btn {
+       width:110px;
+       height:30px;
+	   margin-left: 15%;
+	   font-size: 10px;
+    }
+    #banner-text .btn span {
+	   margin-right: 3px;
+	   padding: 0 7px;
+    }
+	#content{
+	    width: 100%;
+	}
+	#content .content-text {
+		margin-top:-230px;
+		margin-left:360px;
+    }
+	#content .content-img img{
+	    width: 50%;
+    }
+    #content .content-text h2 {
+	    font-size: 18px;
+	    margin-bottom: 10px;
+    }
+    #content .aboutchn-text {
+    	height:200px;
+    }
+    #content .aboutchn-text-title {
+        font-size: 8px;
+    }
+    #content .content-text .aboutchn-text-content{
+	    font-size: 10px;
+	    line-height:20px;
+    }
+    #content .cook {
+	    width: 100%;
+	    height: 230px;
+	    margin-left: 5px;
+    }
+    #content .cook-text {
+	    width: 50%;
+	    height: 200px;
+	    margin-top: 15px;
+	    margin-left: 10px;
+	}
+    #content .cook-text .ourcook {
+    	font-size: 8px;
+    } 
+    #content .cook-text .cook-text-text {
+	    font-size: 10px;
+	    line-height:20px;
+    }
+    #content .cook-img img {
+		margin-top:-230px;
+		margin-left:360px;
+	    width: 45%;
+    }            
+	#menu .menu-title {
+		font-size: 28px;
+	}
+	#menu .view{
+		margin-left: 75%;
+		width:120px;
+		font-size:12px;
+	}
+	#menu .view span{
+		margin-right: 5px;
+		padding: 0 6px;
+	}
+	#menu .menu {
+		padding: 0;
+		margin-top: 5%;
+		width:90%;
+	}
+	#menu .menu-fruits {
+		width:80%;
+		margin-left:30%;
+		height:220px;
+		box-shadow:3px 3px #ccc;
+	}
+	#menu .menu-fruits img{
+		position: relative;
+		margin-top: 30px;
+		margin-left: 30px;
+		width: 60%;
+	}
+	#menu .menu-fruits h4{
+		font-size: 13px;
+	}
+	#menu .menu-fruits .btn{
+		width:80px;
+		margin-left:20%;
+		font-size:12px;
+	}
+	#reservation {
+		width:50%;
+		margin-top:80px;
+    }
+    #reservation h2{
+	    font-size:20px;
+    }
+    #reservation #reservation-view{
+    	font-size: 10px;
+    }
+    #reservation .reservation-img img{
+    	margin-top:-350px;
+		margin-left:100%;
+		width: 80%;
+    }
+    #reservation .btn-reservation{
+	    width:125px;
+	    font-size:8px;
+	    margin-left:20%;
+    }
+    #reservation .btn-reservation span {
+	    padding: 0 7px;
+    }
+    footer{
+    	padding-left:15%;
+    }
+    footer h5{
+    	font-size:14px;
+    }
+    footer p{
+    	font-size: 8px;
+    }
+}
+/* 媒体查询 最大在767px时 */
+@media only screen and (max-width: 767px) {
+	.iconfont{
+		font-size:6px;
+	}
+	.header-top {
+	    padding:0 0 0 50px;
+    }
+    .header-bottom-zhezhao {
+		display: none;
+	}
+	nav img {
+	    margin-left:0;
+	    width:65%;
+    }
+    .bg{
+    	height:50px;
+    }
+	#zhezhao {
+		display: none;
+	}
+	#content{
+		margin-bottom:40%;
+	}
+	#content .content-img img{
+	    width: 80%;
+	    margin-left:10%;
+    }
+    #content .content-text{
+    	margin-bottom: 10%;
+    }
+    #content .content-text h2 {
+	    font-size: 14px;
+	    margin-top:10px;
+	    margin-bottom: 15px;
+    }
+    #content .aboutchn-text {
+    	margin-left:10%;
+    	height:100%;
+        width:80%;
+    }
+    #content .aboutchn-text-title {
+        font-size: 6px;
+    }
+    #content .content-text .aboutchn-text-content{
+	    font-size: 8px;
+	    line-height:20px;
+    }
+    #content .cook {
+	    margin-top: 330px;
+	    height:260px;
+	    background: none;
+	    margin-left: 0;
+    }
+    #content .cook-text {
+	    margin-top:10px;
+	    height:100%;
+        width:80%;
+        background: #efefef;
+        margin-left: 10%;
+    }
+    #content .cook-text .ourcook {
+    	font-size: 6px;
+    } 
+    #content .cook-text .cook-text-text {
+	    font-size: 8px;
+	    line-height:20px;
+    }
+    #content .cook-img img {
+		margin-top:-800px;
+		width:80%;
+		margin-left: 10%;
+    }
+    #menu {
+	    margin-top: -30%;
+	    margin-bottom: 15%;
+    }
+	#menu .menu-fruits {
+		width:75%;
+		margin-left:20%;
+		height:80%;
+		margin-bottom:200px;
+	}
+	#menu .menu-title {
+		font-size: 24px;
+	}
+	#menu .view{
+		margin-top:5px;
+		margin-left:70%;
+		width:115px;
+		height:30px;
+		font-size:8px;
+	}
+	#menu .view span{
+		margin-right: 3px;
+		padding: 0 5px;
+	}
+	#menu .menu-fruits .btn{
+	    width:60%;
+	    margin-left:15%;
+    }
+	#reservation {
+		width:50%;
+		margin-top:-80px;
+    }
+    #reservation h2{
+	    font-size:28px;
+    }
+    #reservation #reservation-view{
+    	font-size: 8px;
+    }
+    #reservation .btn-reservation{
+	    width:120px;
+	    font-size:8px;
+	    margin-left:25%;
+	    height:30px;
+    }
+    #reservation .yourmessage{
+	    width:150%;
+    } 
+    #reservation .btn-reservation span {
+	    padding: 0 6px;
+    }
+    #reservation .reservation-img img{
+		width: 150%;
+		margin-left: 30%;
+    }
+    footer{
+    	padding-left:0;
+    	height: 200px;
+    }
+    footer h5{
+    	font-size:10px;
+    }
+    footer p{
+    	font-size: 6px;
+    }
+    footer .footer-bottom {
+	    padding-left: 3%;
+    }
+    footer .container{
+    	margin-left:35%;
+    }
+    footer .footer-text {
+	    margin-left: -35%;
+	    font-size: 6px;
+    }
+}

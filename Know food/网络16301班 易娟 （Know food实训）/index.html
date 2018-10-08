@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/flexslider.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-3.3.1.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/last.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/animate.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+					<span class="iconfont icon-youxiang"><span>123456789@163.com</span></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="iconfont icon-dianhua"><span>100-1000-1000</span></span>
+			</div>
+			<div class="header-bottom">
+				<div class="header-bottom-img">
+						<div id="header-bottom" class="container">
+							<!-- fixed-top 此导航条顶部对齐 -->
+								<nav class="navbar navbar-expand-lg	 bg-dark navbar-dark fixed-top ">
+									<a href="#">
+										<img src="img/logo.png" alt="" class="navbar-brand" id="logo">
+									</a>
+									<!-- data-target="#header-bottom-nav" 当点击时切换此div -->
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-bottom-nav">
+										<!-- navbar-toggler-icon 汉堡包导航的图标 -->
+										<span class="navbar-toggler-icon"></span>
+									</button>
+									<!-- justify-content-end 表示向右对齐 -->
+									<div class="collapse navbar-collapse justify-content-end"  id="header-bottom-nav">
+										<ul class="navbar-nav">
+											<li class="nav-item active">
+												<a href="index.html">Home</a>
+											</li>
+											<li class="nav-item">
+												<a href="#">About&nbsp;food</a>
+											</li>
+											<li class="nav-item">
+												<a href="menu.html">Menu</a>
+											</li>
+											<li class="nav-item">
+												<a href="#">Connoisseur</a>
+											</li>
+											<li class="nav-item">
+												<a href="#">Reservation</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="iconfont icon-sousuo"></a>
+											</li>
+										</ul>
+									</div>
+								</nav>
+						</div>
+						<!--轮播-->
+					  <div id="app">
+						  <template v-for="(pic, index) in pics">
+							  <img v-bind:src=pic.url class="img" v-show="pic.isCurrent == true">
+							</template>
+							<div id="zhezhao"></div>
+					  </div>
+			        </div>
+					<div class="header-bottom-zhezhao">
+					<div id="banner-text">
+						   <h2 class="text-center">Know Gourmet</h2>
+						   <p>Know food.Delicious food, as the name suggests, is del
+	icious food,expensive and delicacies,cheap
+	street snacks. As a matter of fact,delicacies
+	are neither equalnor inferior, but as long as
+	they are fond of them,they can be called.</p>
+	                       <button class="btn btn-light btn-lg"><span></span>Reservation</button>
+					    </div>
+				      </div>
+				</div>
+				
+		</header>
+		<br>
+		<section id="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 content-img">
+						<img src="img/content.jpg" alt="">
+					</div>
+					<div class="col-lg-5 content-text">
+						<div class="box">
+						<h2 class="text-center">About CHN</h2>
+						<div class="aboutchn-text">
+						  <div class="box-area">
+							<p class="aboutchn-text-title">Chinese cuisine culture</p>
+							<p class="aboutchn-text-content">Under the influence of Yin-Yang and Five Elements
+Philosophy, Taoist Confucianism, Confucian ethics
+and morality, cultural and artistic achievements, die
+tary aesthetic fashion, national character and other,
+factors, the Chinese cuisine in the Chinese tradition
+al culture and education has created a vast and pro
+found Chinese dietary culture.</p>
+                         </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+				<div class="row cook">
+					<div class="col-lg-5">
+						<div class="box">
+						<div class="cook-text">
+						   <div class="box-area">
+							<p class="ourcook">Our Cook</p>
+							<p class="cook-text-text">A chef is a person who takes cooking as a career a
+nd cooksdishes as the main contents. The professi
+on ofchefs appeared very early, and in the slave so
+ciety, there were full-time cooks. With the continuo
+us improvement of social material civilization, thec
+areer of chefs has been developing, and the ranks
+of full-time chefs have been expanding. </p>
+                         </div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-lg-7 cook-img">
+						<img src="img/cook.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="menu">
+			<div class="container">
+                <p><span class="menu-title">Menu</span><button class="btn view"><span></span>View The Menu</button></p>
+				<div class="row menu">
+					<!-- PC4格 PAD4隔 其余设备12 -->
+					<div class="col-lg-4 col-md-4 col-12">
+						<div class="menu-fruits">
+							<img src="img/pancakes with fruits.png" alt="">
+							<h4>pancakes with fruits</h4>
+							<button class="btn">￥45</button>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-12">
+					    <div class="menu-fruits">
+							<img src="img/fried rice on pot.png" alt="">
+							<h4>fried rice on pot</h4>
+							<button class="btn">￥45</button>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-12">
+					    <div class="menu-fruits">
+							<img src="img/meat sandwich.png" alt="">
+							<h4>meat sandwich</h4>
+							<button class="btn">￥45</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section id="reservation">
+			<div class="container">
+				<div class="row">
+					<!-- PC为6格 其余设备默认为12 -->
+					<div class="col-lg-6" id="reservation-view">
+						<h2>Reservation</h2>
+						<p>
+							<input type="text" placeholder="dd/mm/yyyy"/>
+							<input type="text" placeholder="--:--"/>
+						</p>
+					    <p>
+					    	<input type="text" placeholder="Select Person"/>
+					    	<input type="text" placeholder="Last name"/>
+					    </p>
+					    <p >
+					    	<input type="text" placeholder="Your Message" class="yourmessage"/>
+						<button class="btn btn-lg btn-reservation"><span></span>View The Menu</button>
+					</p>
+					</div>
+					<div class="col-lg-6 reservation-img">
+					<img src="img/Reservation.jpg" alt="" />
+				</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 footer-bottom col-md-6">
+						<h5>Contact us</h5>
+						<p>Tel：100-1000-1000</p>
+						<p>QQ：123456789</p>
+						<p>Email：123456789@163.com</p>
+					</div>
+					<div class="col-lg-6 col-md-6 footer-bottom-bottom">
+						<h5>Company address</h5>
+						<p>China：Optics Valley square, Wuhan, Hubei</p>
+						<p>USA：Redmond, Washington, USA</p>
+					</div>
+				</div>
+				<p class="footer-text">Copyright ©2018 Know food has sales in all countries. China, Europe, America, East Asia and Africa all have sales. </p>
+			</div>
+		</footer>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		var myData = {
+			// 存储图片路径的数组
+			pics: [
+				{
+					isCurrent: true,
+					url: "img/banner1.jpg"
+				},
+				{
+					isCurrent: false,
+					url: "img/banner4.jpg"
+				},
+				{
+					isCurrent: false,
+					url: "img/banner6.jpg"
+				}
+			],
+			currentIndex: 0
+		}
+		// 定义一个轮播的函数
+		function changeNO() {
+			// 使用for循环 首先获取图片下标数量 来计算有多少张图片
+			// 然后根据下标来轮流显示此下标所对应的图片
+			// 当选中所对应下标图片时此图片的isCurrent属性为true
+			// 其余为选中的为false
+			for (i=0; i<myData.pics.length; i++)
+				myData.pics[i].isCurrent = false;
+			myData.currentIndex++;
+			if (myData.currentIndex > myData.pics.length-1)
+				myData.currentIndex = 0;
+			myData.pics[myData.currentIndex].isCurrent = true;
+		}
+
+		var app = new Vue({
+			el: "#app",
+			data: myData,
+			// 钩子函数 当页面打开时自动调用函数
+			created: function() {				
+				// 定时器 每3000毫秒执行一次函数 3000毫秒 = 3秒
+				setInterval(changeNO, 3000)
+			}
+		})
+	</script>
+</html>
